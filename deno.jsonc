@@ -1,0 +1,48 @@
+{
+  "name": "@deno-forge/anvil",
+  "version": "0.1.0",
+  "exports": "./mod.ts",
+  "description": "Shell runners, config parsers, and core utilities every Deno smith needs.",
+  "githubPath": "deno-forge/anvil",
+  "tasks": {
+    "test": "deno test --allow-run",
+    "check": "deno fmt && deno lint && deno task test"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/jsonc": "jsr:@std/jsonc@1",
+    "@std/testing": "jsr:@std/testing@1"
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 3,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": [
+      "src/*.ts"
+    ]
+  },
+  "lint": {
+    "include": ["src/","mod.ts"],
+    "exclude": ["**/*.test.ts"],
+    "rules": {
+      "tags": [
+        "recommended",
+        "jsr"
+      ],
+      "include": [
+        "require-jsdoc"
+      ]
+    }
+  },
+  "publish": {
+    "include": [
+      "LICENSE",
+      "README.md",
+      "mod.ts",
+      "src/**/*.ts"
+    ]
+  }
+}
