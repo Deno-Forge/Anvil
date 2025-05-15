@@ -1,8 +1,5 @@
 # 🛠️ @deno-forge/anvil
 
-[![jsr](https://img.shields.io/badge/jsr--%40deno-forge%2Fanvil-blue?logo=deno)](https://jsr.io/@deno-forge/anvil)
-[![GitHub](https://img.shields.io/badge/GitHub-deno-forge/anvil-blue?logo=github)](https://github.com/deno-forge/anvil)
-
 Shell runners, config parsers, and foundational utilities every Deno smith needs.
 
 ---
@@ -28,6 +25,27 @@ await runShellCommand({
 ### `parseDenoConfig`
 
 > Reads and parses the nearest `deno.json` or `deno.jsonc` file.
+
+```ts
+import { parseDenoConfig } from "jsr:@deno-forge/anvil";
+
+// Auto-detect deno.jsonc or deno.json
+const config = await parseDenoConfig();
+
+if (config.imports) {
+  console.log("Imports map:", config.imports);
+}
+```
+
+> You can also specify a config file directly:
+
+```ts
+import { parseDenoConfig } from "jsr:@deno-forge/anvil";
+
+const config = await parseDenoConfig({ filePath: "./configs/deno.json" });
+
+console.log("Compiler options:", config.compilerOptions);
+```
 
 ## 🔧 Philosophy
 
