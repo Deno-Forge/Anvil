@@ -1,3 +1,14 @@
+/**
+ * Reads and parses a Deno config file (`deno.json` or `deno.jsonc`) into a typed structure.
+ *
+ * Exposes a resilient, testable interface for extracting project metadata like import maps,
+ * tasks, and compiler options. Prefers `deno.jsonc` if both formats are present.
+ *
+ * Ideal for CLI tools and automation scripts that need to introspect Deno projects.
+ * @module
+ */
+
+
 import { parse } from '@std/jsonc'
 
 /**

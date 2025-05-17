@@ -1,3 +1,14 @@
+/**
+ * Execute shell commands with optional dry-run, quiet mode, and rich error output.
+ *
+ * This utility wraps `Deno.Command` to provide user-friendly logging,
+ * structured results, and safe escape handling for complex arguments.
+ *
+ * Ideal for automation scripts and CLI tools that require system-level execution
+ * with predictable behavior and testable output.
+ * @module
+ */
+
 /** Options for runShellCommand */
 export type RunShellCommandOptions = {
    /** The shell command to run, including arguments and flags. */

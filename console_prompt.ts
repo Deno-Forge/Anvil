@@ -1,3 +1,13 @@
+/**
+ * Prompt the user with a question in the terminal and handle input like a seasoned CLI.
+ *
+ * This utility provides a flexible, injectable wrapper around `prompt()`,
+ * including cancel handling, default values, and retry support.
+ *
+ * Suitable for interactive Deno CLI tools where testability and UX are both key.
+ * @module
+ */
+
 /** Options for consolePrompt */
 export type ConsolePromptOptions = {
    /** Default value to return if input is empty or canceled. */

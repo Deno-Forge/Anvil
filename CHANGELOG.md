@@ -1,3 +1,14 @@
+## [0.1.4] – Docs for the Docs God
+
+Added module-level documentation for all exported entrypoints to restore JSR doc coverage.
+
+### 📝 Documentation
+
+- Added `@module` JSDoc comments to:
+  - `console_prompt.ts`
+  - `run_shell_command.ts`
+  - `parse_deno_config.ts`
+
 ## [0.1.3] – Paths Forged Open
 
 This patch release exposes the individual utilities of `@deno-forge/anvil` for direct import via JSR.
