@@ -1,6 +1,6 @@
 {
   "name": "@deno-forge/anvil",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "exports": "./mod.ts",
   "description": "Shell runners, config parsers, and core utilities every Deno smith needs.",
   "githubPath": "deno-forge/anvil",

@@ -8,6 +8,21 @@ The anvil is where every tool begins its shape. This module provides the utiliti
 
 ## 📦 Modules
 
+### `consolePrompt`
+
+> Ask the user for input with cancel handling and testable injection.
+
+```ts
+import { consolePrompt } from "jsr:@deno-forge/anvil";
+
+// Ask a question with a default fallback
+const name = consolePrompt("What's your name?", {
+  defaultValue: "Forgey",
+});
+
+console.log(`Welcome, ${name}.`);
+```
+
 ### `runShellCommand`
 
 > Run shell commands with dry-run, quiet mode, and rich output.

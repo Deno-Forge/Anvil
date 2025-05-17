@@ -1,4 +1,10 @@
 export {
+  consolePrompt,
+  PromptCancelledError,
+  type  ConsolePromptOptions,
+} from "./src/console_prompt.ts";
+
+export {
   runShellCommand,
   ShellCommandError,
   type RunShellCommandOptions,
@@ -7,7 +13,7 @@ export {
 
 export {
   parseDenoConfig,
+  ParseError,
   type ParseDenoConfigOptions,
   type DenoConfig,
-  ParseError,
 } from "./src/parse_deno_config.ts";
