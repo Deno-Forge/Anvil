@@ -1,3 +1,15 @@
+## [0.1.3] – Paths Forged Open
+
+This patch release exposes the individual utilities of `@deno-forge/anvil` for direct import via JSR.
+
+### 🔧 Internal
+
+- Added named exports for:
+  - `./console_prompt`
+  - `./run_shell_command`
+  - `./parse_deno_config`
+- Developers can now import tools directly without relying on `mod.ts`
+
 ## [0.1.2] – Flat-Forged for Precision
 
 This release flattens the forge floor, aligning `@deno-forge/anvil` with the import ergonomics of `@std`. Utilities are now directly importable without pulling unintended dependencies.

@@ -1,7 +1,12 @@
 {
   "name": "@deno-forge/anvil",
-  "version": "0.1.2",
-  "exports": "./mod.ts",
+  "version": "0.1.3",
+  "exports": {
+    "./mod.ts": "./mod.ts",
+    "./console_prompt": "./console_prompt.ts",
+    "./parse_deno_config": "./parse_deno_config.ts",
+    "./run_shell_command": "./run_shell_command.ts"
+  },
   "description": "Shell runners, config parsers, and core utilities every Deno smith needs.",
   "githubPath": "deno-forge/anvil",
   "tasks": {
