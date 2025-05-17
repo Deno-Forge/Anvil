@@ -18,7 +18,14 @@ export type ConsolePromptOptions = {
    repeatOnCancel?: boolean
 }
 
-/** Error thrown when prompt is cancelled and `throwOnCancel` is true. */
+/**
+ * Error thrown when the user cancels a prompt and `throwOnCancel` is enabled.
+ *
+ * @example
+ * ```ts
+ * throw new PromptCancelledError();
+ * ```
+ */
 export class PromptCancelledError extends Error {
    constructor() {
       super('Prompt was cancelled by the user.')

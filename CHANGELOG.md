@@ -1,3 +1,13 @@
+## [0.1.5] – Better Said Than Silent
+
+Improved documentation to help JSR and humans alike.
+
+### 📝 Documentation
+
+- Expanded JSDoc for `PromptCancelledError` and `ShellCommandError`
+- Added `@property` and `@example` tags to ensure JSR symbol recognition
+- Should raise JSR doc score above the 80% threshold
+
 ## [0.1.4] – Docs for the Docs God
 
 Added module-level documentation for all exported entrypoints to restore JSR doc coverage.

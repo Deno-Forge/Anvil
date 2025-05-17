@@ -38,7 +38,16 @@ export type ShellCommandOutput = {
 
 /**
  * Error thrown when a shell command fails.
- * Includes the command's exit code and full stdout/stderr output.
+ *
+ * @property cmdOutput – Full stdout/stderr and exit code of the failed command.
+ * @example
+ * ```ts
+ * throw new ShellCommandError(["git", "push"], {
+ *   code: 1,
+ *   stdout: "",
+ *   stderr: "fatal: not a git repository"
+ * });
+ * ```
  */
 export class ShellCommandError extends Error {
    /** The stderr output */

@@ -1,6 +1,6 @@
 {
   "name": "@deno-forge/anvil",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "exports": {
     "./mod.ts": "./mod.ts",
     "./console_prompt": "./console_prompt.ts",
