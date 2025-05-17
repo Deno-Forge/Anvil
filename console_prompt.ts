@@ -16,7 +16,7 @@ export class PromptCancelledError extends Error {
 }
 
 /** @internal */
-export type ConsolePromptInjects = {
+type ConsolePromptInjects = {
    promptFn?: (question: string, defaultValue?: string) => string | null
    exit?: typeof Deno.exit
 }

@@ -1,5 +1,5 @@
-import { consolePrompt, ConsolePromptOptions, PromptCancelledError } from './console_prompt.ts'
-import { assertEquals, assertThrows } from 'jsr:@std/assert'
+import { consolePrompt, PromptCancelledError } from './console_prompt.ts'
+import { assertEquals, assertThrows } from '@std/assert'
 
 Deno.test('consolePrompt - returns input when provided', () => {
    const mockPrompt = (_q: string, _d?: string) => 'Forgey'

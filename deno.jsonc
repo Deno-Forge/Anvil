@@ -1,6 +1,6 @@
 {
   "name": "@deno-forge/anvil",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "exports": "./mod.ts",
   "description": "Shell runners, config parsers, and core utilities every Deno smith needs.",
   "githubPath": "deno-forge/anvil",
@@ -21,11 +21,11 @@
     "singleQuote": true,
     "proseWrap": "preserve",
     "include": [
-      "src/*.ts"
+      "**/*.ts"
     ]
   },
   "lint": {
-    "include": ["src/","mod.ts"],
+    "include": ["**/*.ts","mod.ts"],
     "exclude": ["**/*.test.ts"],
     "rules": {
       "tags": [
@@ -42,7 +42,9 @@
       "LICENSE",
       "README.md",
       "mod.ts",
-      "src/**/*.ts"
+      "console_prompt.ts",
+      "parse_deno_config.ts",
+      "run_shell_command.ts"
     ]
   }
 }

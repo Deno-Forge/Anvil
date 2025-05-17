@@ -1,3 +1,14 @@
+## [0.1.2] – Flat-Forged for Precision
+
+This release flattens the forge floor, aligning `@deno-forge/anvil` with the import ergonomics of `@std`. Utilities are now directly importable without pulling unintended dependencies.
+
+### 🔧 Internal
+
+- **Flattened file structure**: moved all exported utilities from `/src` to top-level `.ts` files
+- **Minimized dependency graph**: consumers can now import `console_prompt`, `run_shell_command`, and `parse_deno_config` individually without triggering transitive `std/jsonc` inclusion
+- Updated `deno.jsonc` to reflect new file locations for linting, formatting, and publishing
+- Internal inject types (`*Injects`) are no longer exported from their modules
+
 ## [0.1.1] – Prompt the Forge
 
 The smiths now speak—introducing a flexible prompt utility for CLI interactivity.

@@ -13,7 +13,7 @@ The anvil is where every tool begins its shape. This module provides the utiliti
 > Ask the user for input with cancel handling and testable injection.
 
 ```ts
-import { consolePrompt } from "jsr:@deno-forge/anvil";
+import { consolePrompt } from "jsr:@deno-forge/anvil/console_prompt";
 
 // Ask a question with a default fallback
 const name = consolePrompt("What's your name?", {
@@ -28,7 +28,7 @@ console.log(`Welcome, ${name}.`);
 > Run shell commands with dry-run, quiet mode, and rich output.
 
 ```ts
-import { runShellCommand } from "jsr:@deno-forge/anvil";
+import { runShellCommand } from "jsr:@deno-forge/anvil/run_shell_command";
 
 await runShellCommand({
   cmd: ["git", "init"],
@@ -42,7 +42,7 @@ await runShellCommand({
 > Reads and parses the nearest `deno.json` or `deno.jsonc` file.
 
 ```ts
-import { parseDenoConfig } from "jsr:@deno-forge/anvil";
+import { parseDenoConfig } from "jsr:@deno-forge/anvil/parse_deno_config";
 
 // Auto-detect deno.jsonc or deno.json
 const config = await parseDenoConfig();
@@ -55,7 +55,7 @@ if (config.imports) {
 > You can also specify a config file directly:
 
 ```ts
-import { parseDenoConfig } from "jsr:@deno-forge/anvil";
+import { parseDenoConfig } from "jsr:@deno-forge/anvil/parse_deno_config";
 
 const config = await parseDenoConfig({ filePath: "./configs/deno.json" });
 

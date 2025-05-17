@@ -1,5 +1,5 @@
-import { runShellCommand, ShellCommandError, ShellCommandOutput, shellEscape } from './run_shell_command.ts'
-import { assertEquals, assertRejects } from 'jsr:@std/assert'
+import { runShellCommand, ShellCommandError, shellEscape } from './run_shell_command.ts'
+import { assertEquals, assertRejects } from '@std/assert'
 import { assertSpyCall, assertSpyCalls, spy } from '@std/testing/mock'
 
 Deno.test('runShellCommand: executes a successful command', async () => {

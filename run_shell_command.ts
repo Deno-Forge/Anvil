@@ -11,7 +11,7 @@ export type RunShellCommandOptions = {
 }
 
 /** @internal */
-export type RunShellCommandInjects = {
+type RunShellCommandInjects = {
    consoleLog?: typeof console.log
 }
 

@@ -28,7 +28,7 @@ export type ParseDenoConfigOptions = {
 }
 
 /** @internal */
-export type ParseDenoConfigInjects = {
+type ParseDenoConfigInjects = {
    readFn?: typeof Deno.readTextFile
 }
 
