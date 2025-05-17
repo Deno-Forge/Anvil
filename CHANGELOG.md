@@ -1,3 +1,16 @@
+## [0.1.6] – The Modular Way
+
+The anvil now mirrors `@std`: no central `mod.ts`, just direct, minimal entrypoints.
+
+### 🧱 Structural
+
+- Removed `mod.ts` to match `@std` conventions
+- Each utility is now exported individually:
+  - `./console_prompt`
+  - `./run_shell_command`
+  - `./parse_deno_config`
+- Improves documentation scoring and module clarity on JSR
+
 ## [0.1.5] – Better Said Than Silent
 
 Improved documentation to help JSR and humans alike.
